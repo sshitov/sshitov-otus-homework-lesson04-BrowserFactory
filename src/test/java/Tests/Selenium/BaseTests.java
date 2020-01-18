@@ -26,7 +26,7 @@ public class BaseTests {
     protected static DriverManager driverManager;
     protected WebDriverWait wait;
     protected static String baseUrl = prodEnvConfig.baseUrl();
-    protected static String browser = System.getProperty("browser");
+    protected static String browser = System.getProperty("browser").toUpperCase();
 
     // test methods
     public static void webDriverManagerInitialize(){
