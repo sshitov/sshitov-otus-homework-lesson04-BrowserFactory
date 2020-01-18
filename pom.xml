@@ -89,6 +89,12 @@
                     <includes>
                         <include>OtusTests.java</include>
                     </includes>
+
+                    <systemPropertyVariables>
+                        <browser>CHROME</browser>
+                        <browser>${browser}</browser>
+                    </systemPropertyVariables>
+
                 </configuration>
             </plugin>
 

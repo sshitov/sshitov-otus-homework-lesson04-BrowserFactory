@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseTests {
 
     // initialize properties
-    public static BrowserChromeConfig browserChromeConfig = ConfigFactory.create(BrowserChromeConfig.class, System.getProperties());
     public static ProdEnvConfig prodEnvConfig = ConfigFactory.create(ProdEnvConfig.class, System.getProperties());
 
     // initialize logger
@@ -27,7 +26,7 @@ public class BaseTests {
     protected static DriverManager driverManager;
     protected WebDriverWait wait;
     protected static String baseUrl = prodEnvConfig.baseUrl();
-    protected static String browser = browserChromeConfig.browser();
+    protected static String browser = System.getProperty("browser");
 
     // test methods
     public static void webDriverManagerInitialize(){
