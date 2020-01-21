@@ -93,6 +93,7 @@
                     <systemPropertyVariables>
                         <browser>CHROME</browser>
                         <browser>${browser}</browser>
+                        <envType>${envType}</envType>
                     </systemPropertyVariables>
 
                 </configuration>
